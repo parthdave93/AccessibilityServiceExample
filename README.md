@@ -72,7 +72,7 @@ Add description in strings the label you want to show in accessiblity service an
     <string name="accessibility_service_label">Access label</string>
     <string name="accessibility_service_description">Service Description</string>
 <br/>
-<img src="./Screenshots/accessibilitysettings.png" width="100%" height="100%"/>
+<img src="./Screenshots/accessibilitysettings.png" width="450px" height="100%"/>
 
 <br/>
 <br/>
