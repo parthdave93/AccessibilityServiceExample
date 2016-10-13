@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DummyRunningProject</string>
+    <string name="fast_input_label">Fast Input</string>
+    <string name="accessibility_service_label">Access label</string>
+    <string name="accessibility_service_description">Service Description</string>
+</resources>

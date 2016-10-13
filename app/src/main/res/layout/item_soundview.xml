@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llItemContainer"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="1dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="horizontal"
+    android:background="@color/colorAccent">
+
+
+    <ImageView
+        android:id="@+id/ivSoundIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <!-- A CardView that contains a TextView -->
+</LinearLayout>
