@@ -128,3 +128,25 @@ Add description in strings the label you want to show in accessiblity service an
         return accessibilityFound;
     }
 
+# ** Getting keyevents **
+
+    @Override
+        public void onAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
+            Log.d(TAG, "onAccessibilityEvent");
+            final String sourcePackageName = (String) accessibilityEvent.getPackageName();
+            currntApplicationPackage = sourcePackageName;
+            Log.d(TAG, "sourcePackageName:" + sourcePackageName);
+            Log.d(TAG, "parcelable:" + accessibilityEvent.getText().toString());
+    
+            windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
+        
+            // check for which events you want
+            if (accessibilityEvent.getEventType() == AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED) {
+                Log.d(TAGEVENTS, "TYPE_VIEW_TEXT_CHANGED");
+                //accessibilityEvent.getText().toString() will give all text which user typed in input box
+                
+                windowController.notifyDatasetChanged(accessibilityEvent.getText().toString(), currntApplicationPackage);
+            } 
+        }
+        
+        
